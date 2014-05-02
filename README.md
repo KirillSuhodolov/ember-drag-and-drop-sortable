@@ -24,7 +24,15 @@ SomeSortableView = SortableView.extend({
   itemViewClass: ItemView.extend({
     templateName: 'itemView',
     ...
-  })
+  }),
+  onRemove: function(object) {
+  //  callback fires when element removes from colelction
+  },
+  onReceive: function(object) {
+  //  callbaack fires when element receive to collection
+  }
+
+  // instances of removing and receiving views are different
 })
 ```
 
