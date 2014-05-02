@@ -26,10 +26,12 @@ SomeSortableView = SortableView.extend({
     ...
   }),
   onRemove: function(object) {
-  //  callback fires when element removes from colelction
+  //  Callback fires when element removes from collection.
+  //  You can manipulate with element before save there
   },
   onReceive: function(object) {
-  //  callbaack fires when element receive to collection
+  //  Callbaack fires when element receive to collection.
+  //  You can manipulate with element before save there.
   }
 
   // instances of removing and receiving views are different
